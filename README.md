@@ -1,4 +1,4 @@
-# is-core-module <sup>[![Version Badge][2]][1]</sup>
+# @no-shims/is-core-module <sup>[![Version Badge][2]][1]</sup>
 
 [![github actions][actions-image]][actions-url]
 [![coverage][codecov-image]][codecov-url]
@@ -14,27 +14,29 @@ Is this specifier a node.js core module? Optionally provide a node version to ch
 ## Example
 
 ```js
-var isCore = require('is-core-module');
-var assert = require('assert');
-assert(isCore('fs'));
-assert(!isCore('butts'));
+import assert from 'node:assert'
+import isCore from '@no-shims/is-core-module'
+
+assert(isCore('fs'))
+assert(!isCore('butts'))
 ```
 
 ## Tests
-Clone the repo, `npm install`, and run `npm test`
 
-[1]: https://npmjs.org/package/is-core-module
-[2]: https://versionbadg.es/inspect-js/is-core-module.svg
-[5]: https://david-dm.org/inspect-js/is-core-module.svg
-[6]: https://david-dm.org/inspect-js/is-core-module
-[7]: https://david-dm.org/inspect-js/is-core-module/dev-status.svg
-[8]: https://david-dm.org/inspect-js/is-core-module#info=devDependencies
-[11]: https://nodei.co/npm/is-core-module.png?downloads=true&stars=true
-[license-image]: https://img.shields.io/npm/l/is-core-module.svg
+Clone the repo, `pnpm install`, and run `pnpm test`
+
+[1]: https://npmjs.org/package/@no-shims/is-core-module
+[2]: https://versionbadg.es/no-shims/is-core-module.svg
+[5]: https://david-dm.org/no-shims/is-core-module.svg
+[6]: https://david-dm.org/no-shims/is-core-module
+[7]: https://david-dm.org/no-shims/is-core-module/dev-status.svg
+[8]: https://david-dm.org/no-shims/is-core-module#info=devDependencies
+[11]: https://nodei.co/npm/@no-shims/is-core-module.png?downloads=true&stars=true
+[license-image]: https://img.shields.io/npm/l/@no-shims/is-core-module.svg
 [license-url]: LICENSE
-[downloads-image]: https://img.shields.io/npm/dm/is-core-module.svg
-[downloads-url]: https://npm-stat.com/charts.html?package=is-core-module
-[codecov-image]: https://codecov.io/gh/inspect-js/is-core-module/branch/main/graphs/badge.svg
-[codecov-url]: https://app.codecov.io/gh/inspect-js/is-core-module/
-[actions-image]: https://img.shields.io/endpoint?url=https://github-actions-badge-u3jn4tfpocch.runkit.sh/inspect-js/is-core-module
-[actions-url]: https://github.com/inspect-js/is-core-module/actions
+[downloads-image]: https://img.shields.io/npm/dm/@no-shims/is-core-module.svg
+[downloads-url]: https://npm-stat.com/charts.html?package=@no-shims/is-core-module
+[codecov-image]: https://codecov.io/gh/no-shims/is-core-module/branch/main/graphs/badge.svg
+[codecov-url]: https://app.codecov.io/gh/no-shims/is-core-module/
+[actions-image]: https://img.shields.io/endpoint?url=https://github-actions-badge-u3jn4tfpocch.runkit.sh/no-shims/is-core-module
+[actions-url]: https://github.com/no-shims/is-core-module/actions
